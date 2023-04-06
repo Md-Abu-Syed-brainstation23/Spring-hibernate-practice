@@ -1,0 +1,11 @@
+package com.love2code.springdemo;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Car implements Vehicle {
+     public String makeSound(String hornSound)
+     {
+    	 return hornSound;
+     }
+}

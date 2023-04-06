@@ -1,0 +1,25 @@
+package com.annotation.demo;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
+public class Professor {
+	
+	private Car privateCar;
+	@Autowired
+	public Professor()
+	{
+		System.out.println("Inside professor constructor>>");
+	}
+	@Autowired
+	public void setPrivateCar(Car car)
+	{   System.out.println("Inside setter method!");
+		privateCar=car;
+	}
+	public String getNoiseFromCar()
+	{
+		return privateCar.makeNoise("beep beep!");
+	}
+
+}

@@ -1,0 +1,19 @@
+package com.annotation.demo;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+
+
+public class Main {
+
+	public static void main(String[] args) {
+		//load the spring configuration file
+				ClassPathXmlApplicationContext context=new ClassPathXmlApplicationContext("ApplicationContext.xml");
+		        //retrieve bean from the container
+				Vehicle toyotaCar=context.getBean("car",Vehicle.class);
+				System.out.println(toyotaCar.makeNoise("Beep beep!"));
+				context.close();
+
+	}
+
+}

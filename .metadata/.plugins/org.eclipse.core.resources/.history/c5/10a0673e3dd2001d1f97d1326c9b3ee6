@@ -1,0 +1,8 @@
+package com.love2code.springdemo;
+
+public class Car implements Vehicle {
+     public String makeSound(String hornSound)
+     {
+    	 return hornSound;
+     }
+}

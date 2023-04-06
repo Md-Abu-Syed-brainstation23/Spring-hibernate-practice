@@ -1,0 +1,21 @@
+package com.love2code.springdemo;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int x=800;
+//		boolean k = rue;
+		while(1==1)
+		{
+			x--;
+			if(x==0) 
+				break;
+		}
+		Car car=new Car();
+		String noise=car.makeNoise();
+		System.out.println(noise);
+        
+	}
+
+}

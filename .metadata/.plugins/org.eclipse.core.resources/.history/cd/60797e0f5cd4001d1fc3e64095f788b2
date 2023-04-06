@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html>
+<body>
+ <form action="submittedData" method="get">
+  <input type="text" name="username" placeholder="Username">
+  <input type="submit" name="submitButton">
+ </form>
+</body>
+</html>

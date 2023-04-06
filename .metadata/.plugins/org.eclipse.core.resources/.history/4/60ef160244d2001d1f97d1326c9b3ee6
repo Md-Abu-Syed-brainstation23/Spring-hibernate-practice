@@ -1,0 +1,10 @@
+package com.annotation.demo;
+
+public class Car implements Vehicle {
+
+ @Override
+ public String makeNoise(String noiseSound)
+ {
+	 return noiseSound;
+ }
+}
